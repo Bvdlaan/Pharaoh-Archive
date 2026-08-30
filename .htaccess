@@ -1,0 +1,58 @@
+# ==========================================================
+#  pharaoharchive.com — Apache configuration
+# ==========================================================
+
+# ---------- Canonical origin: force HTTPS + non-www ----------
+RewriteEngine On
+
+# 1) Upgrade any HTTP request to HTTPS first
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 2) Then strip a leading "www." so the bare domain is canonical
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+# ---------- Default charset ----------
+AddDefaultCharset UTF-8
+
+# ---------- Custom error pages ----------
+ErrorDocument 400 /400.shtml
+ErrorDocument 401 /401.shtml
+ErrorDocument 403 /403.shtml
+ErrorDocument 404 /404.shtml
+ErrorDocument 500 /500.shtml
+
+# ---------- Do not expose directory listings ----------
+Options -Indexes
+
+# ---------- Protect hidden / sensitive files ----------
+<FilesMatch "(^\.|\.(htaccess|htpasswd|bak|log)$)">
+  Require all denied
+</FilesMatch>
+
+# ---------- Security headers ----------
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "geolocation=(), camera=(), microphone=()"
+  # Enable HSTS only once HTTPS is confirmed permanent across the whole site:
+  # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+
+# ---------- Compression ----------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml text/xml
+</IfModule>
+
+# ---------- Browser caching ----------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/x-icon "access plus 30 days"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
