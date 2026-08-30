@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q0NB9PWFW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1Q0NB9PWFW');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1c3f72">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://docs.google.com">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="description" content="An illustrated encyclopedia of Ancient Egyptian rulers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cinzel+Decorative:wght@700;900&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+  <title>Egyptian Ruler Encyclopedia</title>
+  <link rel="canonical" href="https://pharaoharchive.com/encyclopedia.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pharaoh Archive">
+  <meta property="og:title" content="Egyptian Ruler Encyclopedia">
+  <meta property="og:description" content="An illustrated encyclopedia of Ancient Egyptian rulers.">
+  <meta property="og:url" content="https://pharaoharchive.com/encyclopedia.html">
+  <meta property="og:image" content="https://pharaoharchive.com/images/papyrus-mural-falcons.webp">
+  <meta property="og:locale" content="en">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Egyptian Ruler Encyclopedia">
+  <meta name="twitter:description" content="An illustrated encyclopedia of Ancient Egyptian rulers.">
+  <meta name="twitter:image" content="https://pharaoharchive.com/images/papyrus-mural-falcons.webp">
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://pharaoharchive.com/encyclopedia.html#webpage",
+    "url": "https://pharaoharchive.com/encyclopedia.html",
+    "name": "Egyptian Ruler Encyclopedia",
+    "description": "An illustrated encyclopedia of Ancient Egyptian rulers.",
+    "inLanguage": "en",
+    "isPartOf": { "@id": "https://pharaoharchive.com/#website" },
+    "about": { "@type": "Thing", "name": "Ancient Egyptian rulers" },
+    "publisher": { "@type": "Organization", "name": "AI Personeelstraining", "url": "https://aipersoneelstraining.nl/" }
+  }
+  </script>
+  <!-- Self-canonicalise dynamic entries to their own URL (query params included) -->
+  <script>
+  (function(){var u=location.href.split("#")[0];var c=document.querySelector('link[rel="canonical"]');if(c)c.href=u;var o=document.querySelector('meta[property="og:url"]');if(o)o.setAttribute("content",u);}());
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .full-profile{ margin:1.6rem 0 .4rem; }
+    .full-profile.hidden{ display:none; }
+    .full-profile details{ border:1px solid var(--gold); border-radius:12px; background:rgb(255 251 240 / .9); box-shadow:0 4px 12px rgb(43 33 20 / .1); overflow:hidden; }
+    .full-profile summary{ cursor:pointer; list-style:none; padding:.9rem 1.2rem; color:var(--lapis-deep); font:700 .95rem "Cinzel",serif; background:linear-gradient(180deg,#fff7e0,#f2e3b6); }
+    .full-profile details[open] summary{ border-bottom:1px solid var(--gold); }
+    .full-profile summary::-webkit-details-marker{ display:none; }
+    .full-profile summary::after{ content:"＋"; float:right; color:var(--gold-3); font-weight:700; }
+    .full-profile details[open] summary::after{ content:"－"; }
+    .full-profile .dd-body{ padding:1.1rem 1.3rem 1.4rem; }
+    .full-profile .dd-body h3{ margin:1.3rem 0 .4rem; color:var(--deep); font:700 1.02rem "Cinzel",serif; }
+    .full-profile .dd-body h3:first-child{ margin-top:0; }
+    .full-profile .dd-body p{ margin:0 0 .85rem; }
+    .full-profile .dd-body ul{ margin:.2rem 0 1rem 1.15rem; }
+    .full-profile .dd-body li{ margin:.3rem 0; }
+    .watch-video{ margin:0 0 .4rem; }
+    .watch-video.hidden{ display:none; }
+    .watch-video-btn{ display:inline-flex; align-items:center; gap:.5rem; padding:.75rem 1.4rem; border-radius:12px; border:1px solid var(--gold); background:linear-gradient(180deg,#fff7e0,#f2e3b6); color:var(--lapis-deep); font:700 .95rem "Cinzel",serif; text-decoration:none; box-shadow:0 4px 12px rgb(43 33 20 / .1); transition:transform .12s ease, box-shadow .12s ease; }
+    .watch-video-btn:hover{ transform:translateY(-1px); box-shadow:0 6px 16px rgb(43 33 20 / .16); }
+  </style>
+</head>
+<body class="encyclopedia-page">
+  <header class="site-header"><a href="index.html">𓋹 Ancient Egyptian Rulers</a></header>
+  <main>
+    <a class="back" href="index.html">← Return to the ruler chronology</a>
+    <p class="status" id="status">Loading encyclopedia entry…</p>
+    <article class="entry hidden" id="entry">
+      <p class="eyebrow" id="period"></p>
+      <h1 class="name" id="name"></h1>
+      <p class="dynasty" id="dynasty"></p>
+      <div class="stats"><div class="stat"><b>Reign begins</b><span id="start"></span></div><div class="stat"><b>Reign ends</b><span id="end"></span></div><div class="stat"><b>Dynasty span</b><span id="dynspan"></span></div></div>
+      <figure class="image-wrap" id="image-wrap"><a id="image-link" target="_blank" rel="noopener"><img id="encyclopedia-image" alt=""></a><a class="full-image" id="full-image" target="_blank" rel="noopener">Open full-size illustration →</a></figure>
+      <h2>Background</h2><p class="info" id="info"></p><p class="source" id="source"></p>
+      <div class="full-profile hidden" id="full-profile"></div>
+      <div class="watch-video hidden" id="watch-video"><a id="watch-video-link" class="watch-video-btn" target="_blank" rel="noopener">▶ Watch the video</a></div>
+      <div class="full-profile hidden" id="royal-wife"></div>
+      <nav class="nav"><a id="previous"></a><a id="next"></a></nav>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <a href="index.html">Ancient Egyptian rulers chronology</a> &middot; <a href="about.html">About this project</a> &middot; <a href="youtube.html">YouTube</a>
+    <span class="credit">Website created by <a href="https://www.linkedin.com/in/bvdlaan/" target="_blank" rel="noopener author">Barry van der Laan MBA</a></span>
+  </footer>
+  <script>
+    const sheetUrl = "https://docs.google.com/spreadsheets/d/1znHpHKyBoVdH4awPj9-MT24AwxkUOTPk82BbYu-GGKg/gviz/tq?tqx=out:json&sheet=Rulers";
+    const $ = selector => document.querySelector(selector);
+    const requestedName = new URLSearchParams(location.search).get("ruler");
+    function safeUrl(value){try{const imagePath=String(value||"").trim();if(!imagePath)return "";const resolvedPath=/^(?:[a-z][a-z\d+.-]*:|\/|images\/)/i.test(imagePath)?imagePath:`images/${imagePath}`,url=new URL(resolvedPath,location.href);return /^(https?:)$/.test(url.protocol)?url.href:""}catch{return ""}}
+    function parseReign(value){const text=String(value||"").trim(),suffix=/BCE|BC/i.test(text)?" BCE":(/AD|CE/i.test(text)?" CE":""),range=text.match(/(c\.?\s*)?(\d{1,4})\s*[-–—]\s*(c\.?\s*)?(\d{1,4})/);if(range)return{start:(range[1]?"c.":"")+range[2]+suffix,end:(range[3]?"c.":"")+range[4]+suffix};return{start:text||"Unknown",end:text||"Unknown"}}
+    function entryUrl(name){return `encyclopedia.html?ruler=${encodeURIComponent(name)}`}
+    function ddInline(str,node){String(str).split(/\*\*(.+?)\*\*/g).forEach((seg,i)=>{if(i%2===1){const b=document.createElement("strong");b.textContent=seg;node.appendChild(b);}else if(seg){node.appendChild(document.createTextNode(seg));}});}
+    function renderDetails(host,label,text){host.textContent="";
+      const clean=String(text==null?"":text).replace(/\r/g,"").trim();
+      if(!clean){host.classList.add("hidden");return;}
+      const body=document.createElement("div");body.className="dd-body";
+      let list=null,para=[];
+      const flushPara=()=>{if(para.length){const p=document.createElement("p");ddInline(para.join(" "),p);body.appendChild(p);para=[];}};
+      const flushList=()=>{if(list){body.appendChild(list);list=null;}};
+      clean.split(/\n/).forEach(raw=>{
+        const line=raw.trim();
+        if(!line){flushPara();flushList();return;}
+        if(line.startsWith("## ")){flushPara();flushList();const h=document.createElement("h3");h.textContent=line.slice(3).trim();body.appendChild(h);return;}
+        if(line.startsWith("- ")){flushPara();if(!list)list=document.createElement("ul");const li=document.createElement("li");ddInline(line.slice(2).trim(),li);list.appendChild(li);return;}
+        para.push(line);
+      });
+      flushPara();flushList();
+      const details=document.createElement("details");const summary=document.createElement("summary");summary.textContent=label;
+      details.appendChild(summary);details.appendChild(body);host.appendChild(details);host.classList.remove("hidden");
+    }
+    function renderFullProfile(text){renderDetails($("#full-profile"),"Full profile",text);}
+    function renderWatchVideo(url){const host=$("#watch-video"),link=$("#watch-video-link"),clean=String(url==null?"":url).trim(),safe=/^https?:\/\//i.test(clean)?clean:"";if(!safe){host.classList.add("hidden");link.removeAttribute("href");return;}link.href=safe;host.classList.remove("hidden");}
+    function renderRoyalWife(text){renderDetails($("#royal-wife"),"Great Royal Wife",text);}
+    function showEntry(ruler,all){const reign=parseReign(ruler.dates),imageUrl=safeUrl(ruler.encyclopediaImage);document.title=`${ruler.name} | Egyptian Ruler Encyclopedia`;$("#period").textContent=ruler.period;$("#name").textContent=ruler.name;$("#dynasty").textContent=`${ruler.dynasty} · ${ruler.dynastyDates}`;$("#start").textContent=reign.start;$("#end").textContent=reign.end;$("#dynspan").textContent=ruler.dynastyDates;$("#info").textContent=ruler.info||"A detailed biography for this ruler has not been added yet.";$("#source").textContent=ruler.source?`Chronology: ${ruler.source}`:"";if(imageUrl){$("#encyclopedia-image").src=imageUrl;$("#encyclopedia-image").alt=`Illustrated encyclopedia entry for ${ruler.name}`;$("#image-link").href=imageUrl;$("#full-image").href=imageUrl}else{$("#image-wrap").classList.add("hidden")}const index=all.indexOf(ruler),previous=all[index-1],next=all[index+1];if(previous){$("#previous").href=entryUrl(previous.name);$("#previous").textContent=`← ${previous.name}`}if(next){$("#next").href=entryUrl(next.name);$("#next").textContent=`${next.name} →`}renderFullProfile(ruler.deepDive);renderWatchVideo(ruler.video);renderRoyalWife(ruler.royalWife);$("#status").classList.add("hidden");$("#entry").classList.remove("hidden")}
+    async function load(){if(!requestedName){$("#status").textContent="Choose a ruler from the chronology to open an encyclopedia entry.";return}try{const response=await fetch(`${sheetUrl}&cachebust=${Date.now()}`,{cache:"no-store"});if(!response.ok)throw new Error();const text=await response.text(),match=text.match(/setResponse\((.*)\);?\s*$/s);if(!match)throw new Error();const all=JSON.parse(match[1]).table.rows.map(row=>(row.c||[]).map(cell=>cell?cell.v:" ")).filter(row=>row[0]&&row[3]&&row[0]!=="Period").map(([period,dynasty,dynastyDates,name,dates,source,info,image,encyclopediaImage,deepDive,royalWife,video])=>({period,dynasty,dynastyDates,name,dates,source,info,image,encyclopediaImage,deepDive,royalWife,video}));const ruler=all.find(item=>item.name===requestedName);if(!ruler)throw new Error();showEntry(ruler,all)}catch{$("#status").textContent="This encyclopedia entry could not be loaded. Please return to the chronology and try again."}}
+    load();
+  </script>
+</body>
+</html>
