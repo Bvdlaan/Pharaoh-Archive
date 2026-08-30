@@ -88,9 +88,9 @@ body.about-page{
   min-height:100vh;
   margin:0;
   color:var(--deep);
-  background:
-    linear-gradient(180deg,rgba(247,238,211,.94),rgba(239,224,184,.96)),
-    url("images/papyrus-mural-temple.webp") center/cover fixed;
+  background-color:var(--parch);
+  background-image:linear-gradient(rgb(246 237 207 / .55), rgb(238 225 186 / .60)), url("images/papyrus-mural-temple.webp");
+  background-position:center, center top; background-repeat:no-repeat, repeat-y; background-size:auto, 100% auto;
   font-family:"EB Garamond",Georgia,serif;
 }
 body.about-page .site-header{
