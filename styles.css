@@ -351,3 +351,34 @@ body.dynasty-page .ruler:hover{transform:translateY(-3px); background:#fffdf7; b
 body.dynasty-page .ruler a{display:inline-block; transition:color .16s ease, transform .16s ease;}
 body.dynasty-page .ruler:hover a{color:var(--carn); text-decoration:underline;}
 body.dynasty-page .ruler a:hover, body.dynasty-page .ruler a:focus-visible{color:var(--carn); text-decoration:underline; transform:translateX(2px);}
+
+/* ===== pharaohs-by-dynasty hub ===== */
+body.dynasty-index-page{margin:0;color:var(--ink);font:1.08rem/1.65 "EB Garamond",Georgia,serif;background:linear-gradient(rgb(246 237 207/.57),rgb(246 237 207/.57)),url("images/papyrus-mural-temple.webp") center top/100% auto repeat-y;border-top:7px solid var(--gold)}
+body.dynasty-index-page .site-header{padding:1.4rem 1rem;color:#f7e5ad;text-align:center;background:linear-gradient(180deg,var(--deep),var(--lapis));border-bottom:3px solid var(--gold)}
+body.dynasty-index-page .site-header a{color:inherit;text-decoration:none;font:700 .84rem "Cinzel",serif;letter-spacing:.08em;text-transform:uppercase}
+body.dynasty-index-page main{width:min(1120px,calc(100% - 2rem));margin:2.5rem auto 4rem}
+body.dynasty-index-page .intro,body.dynasty-index-page .period-block{margin:0 0 1.5rem;padding:clamp(1.3rem,4vw,2.5rem);background:rgb(255 251 240/.94);border:1px solid var(--gold);border-radius:14px;box-shadow:0 12px 28px #2b21142e}
+body.dynasty-index-page .eyebrow{margin:0;color:var(--carn);font:700 .75rem "Cinzel",serif;letter-spacing:.15em;text-transform:uppercase}
+body.dynasty-index-page h1{margin:.25rem 0 .8rem;color:var(--deep);font:900 clamp(2.1rem,6vw,4.3rem)/1.08 "Cinzel Decorative","Cinzel",serif}
+body.dynasty-index-page h2{margin:0 0 .5rem;color:var(--deep);font:700 clamp(1.45rem,3vw,2rem) "Cinzel",serif}
+body.dynasty-index-page h3{margin:1.4rem 0 .45rem;padding-bottom:.35rem;color:var(--lapis);font:700 1.08rem "Cinzel",serif;border-bottom:2px solid var(--gold)}
+body.dynasty-index-page .period-nav{display:flex;flex-wrap:wrap;gap:.45rem;margin:1.3rem 0 0;padding:0;list-style:none}
+body.dynasty-index-page .period-nav a{display:block;padding:.35rem .65rem;color:var(--deep);background:#f4e2ae;border:1px solid var(--gold);border-radius:30px;text-decoration:none;font:700 .67rem "Cinzel",serif}
+body.dynasty-index-page .dynasty-timeframe{color:var(--carn);font-style:italic}
+body.dynasty-index-page .ruler-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.45rem 1rem;margin:.7rem 0 0;padding:0;list-style:none}
+body.dynasty-index-page .ruler-links a{color:var(--lapis);text-decoration:none}
+body.dynasty-index-page .ruler-links a:hover,body.dynasty-index-page .ruler-links a:focus-visible{color:var(--carn);text-decoration:underline}
+
+/* Contextual navigation on every static ruler page */
+body.encyclopedia-page .ruler-context{margin-top:1.4rem;padding:clamp(1rem,3vw,1.5rem);background:rgb(255 251 240/.94);border:1px solid var(--gold);border-radius:13px;box-shadow:0 8px 20px rgb(43 33 20/.13)}
+body.encyclopedia-page .context-taxonomy{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.15rem}
+body.encyclopedia-page .context-taxonomy a{padding:.35rem .7rem;color:var(--deep);background:#f4e2ae;border:1px solid var(--gold);border-radius:30px;text-decoration:none;font:700 .68rem "Cinzel",serif}
+body.encyclopedia-page .context-sequence{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-bottom:1.2rem}
+body.encyclopedia-page .context-sequence a{display:block;padding:.8rem;color:#f7e5ad;background:linear-gradient(180deg,var(--lapis-soft),var(--lapis));border:1px solid var(--gold);border-radius:8px;text-decoration:none}
+body.encyclopedia-page .context-sequence a:last-child{text-align:right}
+body.encyclopedia-page .context-label{display:block;color:var(--gold-2);font:700 .62rem "Cinzel",serif;letter-spacing:.09em;text-transform:uppercase}
+body.encyclopedia-page .ruler-context h2{margin:0 0 .65rem;font-size:.92rem}
+body.encyclopedia-page .related-rulers{display:flex;flex-wrap:wrap;gap:.45rem;margin:0;padding:0;list-style:none}
+body.encyclopedia-page .related-rulers a{color:var(--lapis);font-weight:700;text-decoration:none}
+body.encyclopedia-page .related-rulers a:hover,body.encyclopedia-page .related-rulers a:focus-visible{text-decoration:underline;color:var(--carn)}
+@media(max-width:620px){body.encyclopedia-page .context-sequence{grid-template-columns:1fr}body.encyclopedia-page .context-sequence a:last-child{text-align:left}}
